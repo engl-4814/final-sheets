@@ -1,0 +1,79 @@
+/*FONTS
+
+font-family: 'Caveat Brush', cursive;
+font-family: 'Yantramanav', sans-serif; */
+
+html {
+    background-color: #F7EDE2;
+}
+
+/* MENU BUTTON */
+
+.menubtn {
+    background-color: #84A59D;
+    color: #3D5A80;
+    padding: 20px;
+    font-size: ;
+    border: none;
+    cursor: pointer;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F7EDE2;
+}
+
+.menucontent {
+    display: none;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.menucontent a {
+    display: block;
+    padding: 10px;
+    background-color: #F7EDE2;
+    color: #3D5A80;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.menucontent a:hover {
+    background-color: #F5CAC3;
+    color: #F28482;
+}
+
+.menu:hover .menucontent {
+    display: block;
+}
+
+.menu:hover .menubtn {
+    background-color: ;
+}
+
+/*HEADER*/
+
+header {
+    font-family: 'Caveat Brush', cursive;
+    background-color: #F7EDE2;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    color: #84A59D;
+    margin-bottom: -5px;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+header h2 {
+    color: #F28482;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}

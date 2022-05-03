@@ -13,7 +13,6 @@ html {
     background-color: #84A59D;
     color: #3D5A80;
     padding: 20px;
-    font-size: ;
     border: none;
     cursor: pointer;
     font-family: 'Yantramanav', sans-serif;
@@ -49,14 +48,9 @@ html {
     display: block;
 }
 
-.menu:hover .menubtn {
-    background-color: ;
-}
-
 /*HEADER*/
 
 header {
-    font-family: 'Caveat Brush', cursive;
     background-color: #F7EDE2;
     display: flex;
     flex-direction: column;
@@ -65,8 +59,10 @@ header {
 header h1 {
     color: #84A59D;
     margin-bottom: -5px;
+    margin-top: -5px;
     display: flex;
     justify-content: center;
+    font-family: 'Caveat Brush', cursive;
     font-size: 5rem;
 }
 
@@ -75,5 +71,101 @@ header h2 {
     margin-top: -5px;
     display: flex;
     justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
     font-size: 2rem;
+}
+
+/*MAIN*/
+
+.books {
+    background-color: #F5CAC3;
+    display: grid;
+    grid-template-areas: 
+    "bookhdr bookimg"
+    "booktxt bookimg";
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.bookhdr {
+    grid-area: bookhdr;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 6rem;
+    color: #3D5A80;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookhdr h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.bookhdr h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+.bookimg {
+    grid-area: bookimg;
+    display: flex;
+}
+
+.booktxt {
+    grid-area: booktxt;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    color: #3D5A80;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+img {
+    max-width: 400px;
+}
+
+/*ASIDE*/
+
+aside{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+    color: #F28482;
+    display: flex;
+    flex-direction: column;
+}
+
+.merch {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -1px;
+}
+
+.signed {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -1px;
+}
+
+/*SECTION*/
+
+section {
+    background-color: #84A59D;
+}
+
+section h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+    color: #3D5A80;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.insta-images {
+    display: flex;
+    flex-direction: column;
 }

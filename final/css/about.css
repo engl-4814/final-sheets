@@ -1,3 +1,7 @@
+html {
+    background-color: #F7EDE2;
+}
+
 /* MENU BUTTON */
 
 .menubtn {
@@ -64,4 +68,229 @@ header h2 {
     text-align: center;
     font-family: 'Yantramanav', sans-serif;
     font-size: 2rem;
+}
+ 
+/*MAIN*/
+
+.about-the-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5CAC3;
+}
+
+.meet-hdr {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 5rem;
+    color: #3D5A80;
+    padding-left: 10px;
+}
+
+.headshot {
+    max-width: 320px;
+    margin-top: -60px;
+}
+
+.meet-txt {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    color: #3D5A80;
+    max-width: 600px;
+    padding-left: 10px;
+}
+
+/*ASIDE*/
+
+aside{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+    color: #F28482;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.merch {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signed {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -1px;
+}
+
+/*INSTAGRAM SECTION*/
+
+.instagram {
+    background-color: #84A59D;
+}
+
+.instagram h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+    color: #3D5A80;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.insta-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insta-images img {
+    max-width: 300px;
+}
+
+/*FAQ SECTION*/
+
+.faq {
+    background-color: #84A59D;
+}
+
+.faq h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4rem;
+    color: #3D5A80;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 10px;
+    margin-bottom: -.5px;
+}
+
+.faq h4 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2rem;
+    color: #F5CAC3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.faq p {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.25rem;
+    background-color: #F5CAC3;
+    color: #F28482;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*FOOTER*/
+
+.newsletter {
+    background-color: #84A59D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2rem;
+    color: #3D5A80;
+    padding-left: 20px;
+    margin-bottom: -1px;
+}
+
+.newsletter p {
+    font-family: 'Yantramanav', sans-serif;
+    color: #3D5A80;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.newsemail {
+    color: #3D5A80;
+    max-width: 100px;
+}
+
+.newsbtn {
+    background-color: #F5CAC3;
+    color: #F28482;
+    text-align: center;
+} 
+
+.news-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 820px) {
+
+    .hdrname {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+
+    .about-the-author {
+        display: grid;
+        grid-template-areas: 
+        "meet-hdr headshot"
+        "meet-txt headshot";
+    }
+
+    .meet-hdr {
+        grid-area: meet-hdr;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 5px;
+    }
+
+    .meet-txt {
+        grid-area: meet-txt;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: -80px;
+    }
+
+    .headshot {
+        grid-area: headshot;
+        margin-top: 10px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .merch {
+        text-align: center;
+    }
+
+    .signed {
+        margin-top: auto;
+        text-align: center;
+    }
+
+    .insta-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .insta-images img {
+        max-width: 200px;
+        padding-bottom: 20px;
+    }
+
+    .faq p {
+        max-width: 500px;
+    }
+
+    .news-signup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

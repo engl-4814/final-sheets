@@ -294,3 +294,69 @@ aside{
         justify-content: space-between;
     }
 }
+
+@media screen and (min-width: 1000px) {
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .menubtn {
+        display: none;
+    }
+
+    .menucontent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: initial;
+    }
+
+    .hdrname {
+        justify-content:center
+    }
+
+    .meet-hdr {
+        margin: auto;
+        margin-bottom: -40px;
+    }
+
+    .meet-txt {
+        margin: auto;
+        padding: auto;
+        margin-bottom: 50px;
+    }
+
+    .insta-images img {
+        max-width: 400px;
+        margin-bottom: 100px;
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-areas: 
+        "newshdr newstxt news-signup";
+        grid-template-rows: 4em 1em;
+    }
+
+    .newsletter h5 {
+        grid-area: newshdr;
+        margin: auto;
+    }
+
+    .newsletter p {
+        grid-area: newstxt;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .news-signup {
+        grid-area: news-signup;
+        justify-content: flex-end;
+    }
+
+}
